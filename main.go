@@ -23,7 +23,7 @@ func handleGoogleAuthorize(w http.ResponseWriter, r *http.Request, ps httprouter
 }
 
 func handleGoogleCallback(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
-	if r.URL.Query().Get("nonce") != appConf.Nonce {
+	if r.URL.Query().Get("state") != appConf.Nonce {
 		http.Error(w, "Invalid nonce value", http.StatusBadRequest)
 		return
 	}
