@@ -1,0 +1,11 @@
+---
+
+nonce: "<nonce>"
+auth:
+  client_id: "<client id>"
+  client_secret: "<client secret>"
+  scopes:
+    - "email"
+    - "profile"
+    # - Add more scopes
+  redirect_url: "<redirect url>"

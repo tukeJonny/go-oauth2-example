@@ -1,0 +1,2 @@
+# magelib
+Mage library
